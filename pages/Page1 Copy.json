@@ -1,0 +1,312 @@
+{
+  "unpublishedPage": {
+    "name": "Page1 Copy",
+    "slug": "page1-copy",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 816,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 5010,
+          "containerStyle": "none",
+          "snapRows": 125,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 56,
+          "minHeight": 840,
+          "parentColumnSpace": 1,
+          "dynamicTriggerPathList": [],
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "widgetName": "Table1",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "name",
+                "_id",
+                "user"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "iconSVG": "/static/media/icon.db8a9cbd.svg",
+              "topRow": 1,
+              "bottomRow": 29,
+              "isSortable": true,
+              "parentRowSpace": 10,
+              "type": "TABLE_WIDGET",
+              "defaultSelectedRow": "0",
+              "hideCard": false,
+              "animateLoading": true,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.name.computedValue"
+                },
+                {
+                  "key": "primaryColumns._id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.user.computedValue"
+                }
+              ],
+              "leftColumn": 0,
+              "primaryColumns": {
+                "appsmith_mongo_escape_id": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "_id",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow._id))}}"
+                },
+                "name": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "name",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "name",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.name))}}"
+                },
+                "user": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "user",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "user",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.user))}}"
+                }
+              },
+              "delimiter": ",",
+              "key": "iitbt8nzrp",
+              "derivedColumns": {},
+              "rightColumn": 34,
+              "textSize": "PARAGRAPH",
+              "widgetId": "p3bnvwffdo",
+              "isVisibleFilters": true,
+              "tableData": "{{Query1.data}}",
+              "isVisible": true,
+              "label": "Data",
+              "searchKey": "",
+              "enableClientSideSearch": true,
+              "version": 3,
+              "totalRecordsCount": 0,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75
+              }
+            },
+            {
+              "widgetName": "Select1",
+              "isFilterable": false,
+              "displayName": "Select",
+              "iconSVG": "/static/media/icon.bd99caba.svg",
+              "labelText": "Label",
+              "topRow": 30,
+              "bottomRow": 37,
+              "parentRowSpace": 10,
+              "type": "DROP_DOWN_WIDGET",
+              "serverSideFiltering": false,
+              "hideCard": true,
+              "defaultOptionValue": "{{\n            {\n              label: Select1.options[0].label,\n              value: Select1.options[0].value\n            }\n          }}",
+              "selectionType": "SINGLE_SELECT",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "options"
+                },
+                {
+                  "key": "defaultOptionValue"
+                }
+              ],
+              "leftColumn": 0,
+              "options": "{{Query1.data.map( (obj) =>{ return  {'label': obj.name, 'value': obj.name } })}}",
+              "placeholderText": "Select option",
+              "isDisabled": false,
+              "key": "wdmo6zy8bh",
+              "isRequired": false,
+              "rightColumn": 20,
+              "widgetId": "dt2sa4q02v",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false
+            },
+            {
+              "widgetName": "CheckboxGroup1",
+              "displayName": "Checkbox Group",
+              "iconSVG": "/static/media/icon.ecb38479.svg",
+              "topRow": 46,
+              "bottomRow": 52,
+              "parentRowSpace": 10,
+              "type": "CHECKBOX_GROUP_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 9.25,
+              "leftColumn": 25,
+              "options": [
+                {
+                  "label": "Blue",
+                  "value": "BLUE"
+                },
+                {
+                  "label": "Green",
+                  "value": "GREEN"
+                },
+                {
+                  "label": "Red",
+                  "value": "RED"
+                }
+              ],
+              "isDisabled": false,
+              "key": "6kpgtwzmjs",
+              "isRequired": false,
+              "rightColumn": 41,
+              "defaultSelectedValues": "BLUE",
+              "widgetId": "73yalpteii",
+              "isVisible": true,
+              "version": 2,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "isInline": true
+            },
+            {
+              "widgetName": "DocumentViewer1",
+              "rightColumn": 25,
+              "isCanvas": false,
+              "displayName": "Document Viewer",
+              "iconSVG": "/static/media/icon.09fcd36b.svg",
+              "widgetId": "437r2ypajz",
+              "topRow": 54,
+              "bottomRow": 94,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "DOCUMENT_VIEWER_WIDGET",
+              "version": 1,
+              "hideCard": false,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "leftColumn": 1,
+              "docUrl": "https://www.learningcontainer.com/wp-content/uploads/2019/09/sample-pdf-file.pdf",
+              "key": "sg04tv8tji"
+            },
+            {
+              "widgetName": "DatePicker1",
+              "minDate": "1920-12-31T18:30:00.000Z",
+              "dateFormat": "YYYY-MM-DD HH:mm",
+              "displayName": "DatePicker",
+              "iconSVG": "/static/media/icon.300e5ab8.svg",
+              "topRow": 63,
+              "bottomRow": 67,
+              "shortcuts": false,
+              "parentRowSpace": 10,
+              "type": "DATE_PICKER_WIDGET2",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "leftColumn": 39,
+              "isDisabled": false,
+              "key": "f46e7o7cj2",
+              "isRequired": false,
+              "defaultDate": "2022-04-08T05:52:36.596Z",
+              "rightColumn": 59,
+              "widgetId": "017hosex70",
+              "isVisible": true,
+              "datePickerType": "DATE_PICKER",
+              "label": "",
+              "version": 2,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "timePrecision": "minute",
+              "firstDayOfWeek": 0,
+              "closeOnSelection": true,
+              "maxDate": "2121-12-31T18:29:00.000Z"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Page1 Copy_Query1",
+              "name": "Query1",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "widgetNames": [
+          "CheckboxGroup1",
+          "DatePicker1",
+          "DocumentViewer1",
+          "MainContainer",
+          "Select1",
+          "Table1"
+        ],
+        "validOnPageLoadActions": true,
+        "id": "Page1 Copy",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": []
+  },
+  "deleted": false,
+  "policies": [],
+  "gitSyncId": "624d0b13a9cc1c76ab2ded7b_62512f04a4214c0018d35aff"
+}
