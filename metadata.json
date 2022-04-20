@@ -1,6 +1,13 @@
 {
   "clientSchemaVersion": 1,
   "serverSchemaVersion": 4,
+  "pageOrder": [
+    "Page1",
+    "Page2",
+    "Page3",
+    "Page4",
+    "Page5"
+  ],
   "publishedDefaultPageName": "Page1",
   "unpublishedDefaultPageName": "Page1",
   "invisibleActionFields": {

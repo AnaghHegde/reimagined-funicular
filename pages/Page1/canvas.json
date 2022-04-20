@@ -296,6 +296,29 @@
               "leftColumn": 8,
               "autoPlay": false,
               "key": "yks5sh1lpj"
+            },
+            {
+              "widgetName": "Audio2",
+              "rightColumn": 64,
+              "displayName": "Audio",
+              "iconSVG": "/static/media/icon.cb54df7a.svg",
+              "widgetId": "5hlhcz0n79",
+              "topRow": 37,
+              "bottomRow": 41,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "AUDIO_WIDGET",
+              "version": 1,
+              "url": "https://assets.appsmith.com/widgets/birds_chirping.mp3",
+              "hideCard": false,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "leftColumn": 36,
+              "autoPlay": false,
+              "key": "orq9jg6ooe"
             }
           ]
         },
@@ -313,6 +336,7 @@
         ],
         "widgetNames": [
           "Audio1",
+          "Audio2",
           "CheckboxGroup1",
           "DatePicker1",
           "DocumentViewer1",
