@@ -276,6 +276,26 @@
             }
           ]
         },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Page1 Copy_Query1",
+              "name": "Query1",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "widgetNames": [
+          "CheckboxGroup1",
+          "DatePicker1",
+          "DocumentViewer1",
+          "MainContainer",
+          "Select1",
+          "Table1"
+        ],
         "validOnPageLoadActions": true,
         "id": "Page1 Copy",
         "deleted": false,
@@ -288,5 +308,5 @@
   },
   "deleted": false,
   "policies": [],
-  "gitSyncId": "624d0b13a9cc1c76ab2ded7b_62512e7aa4214c0018d35afb"
+  "gitSyncId": "624d0b13a9cc1c76ab2ded7b_62512f04a4214c0018d35aff"
 }

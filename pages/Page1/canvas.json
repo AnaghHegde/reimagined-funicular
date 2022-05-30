@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 57,
+          "version": 59,
           "minHeight": 840,
           "parentColumnSpace": 1,
           "dynamicTriggerPathList": [],
@@ -27,6 +27,7 @@
           "leftColumn": 0,
           "children": [
             {
+              "boxShadow": "none",
               "widgetName": "Table1",
               "defaultPageSize": 0,
               "columnOrder": [
@@ -59,6 +60,9 @@
                 },
                 {
                   "key": "primaryColumns.user.computedValue"
+                },
+                {
+                  "key": "accentColor"
                 }
               ],
               "leftColumn": 0,
@@ -70,7 +74,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -78,7 +82,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "_id",
-                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow._id))}}"
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow._id))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "name": {
                   "index": 0,
@@ -87,7 +93,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -95,7 +101,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "name",
-                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.name))}}"
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.name))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "user": {
                   "index": 2,
@@ -104,7 +112,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -112,15 +120,19 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "user",
-                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.user))}}"
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.user))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 }
               },
               "delimiter": ",",
               "key": "iitbt8nzrp",
               "derivedColumns": {},
+              "labelTextSize": "0.875rem",
               "rightColumn": 34,
-              "textSize": "PARAGRAPH",
+              "textSize": "0.875rem",
               "widgetId": "p3bnvwffdo",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleFilters": true,
               "tableData": "{{Query1.data}}",
               "isVisible": true,
@@ -134,6 +146,24 @@
               "isLoading": false,
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                }
+              },
+              "borderRadius": "0px",
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER",
               "columnSizeMap": {
@@ -143,6 +173,7 @@
               }
             },
             {
+              "boxShadow": "none",
               "widgetName": "Select1",
               "isFilterable": false,
               "displayName": "Select",
@@ -163,6 +194,9 @@
                 },
                 {
                   "key": "defaultOptionValue"
+                },
+                {
+                  "key": "accentColor"
                 }
               ],
               "leftColumn": 0,
@@ -170,16 +204,20 @@
               "placeholderText": "Select option",
               "isDisabled": false,
               "key": "wdmo6zy8bh",
+              "labelTextSize": "0.875rem",
               "isRequired": false,
               "rightColumn": 20,
               "widgetId": "dt2sa4q02v",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
               "version": 1,
               "parentId": "0",
               "renderMode": "CANVAS",
-              "isLoading": false
+              "isLoading": false,
+              "borderRadius": "0px"
             },
             {
+              "boxShadow": "none",
               "widgetName": "CheckboxGroup1",
               "displayName": "Checkbox Group",
               "iconSVG": "/static/media/icon.ecb38479.svg",
@@ -207,41 +245,48 @@
               ],
               "isDisabled": false,
               "key": "6kpgtwzmjs",
+              "labelTextSize": "0.875rem",
               "isRequired": false,
               "rightColumn": 41,
               "defaultSelectedValues": "BLUE",
               "widgetId": "73yalpteii",
+              "accentColor": "#03B365",
               "isVisible": true,
               "version": 2,
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "borderRadius": "0px",
               "isInline": true
             },
             {
+              "boxShadow": "none",
               "widgetName": "DocumentViewer1",
-              "rightColumn": 25,
               "isCanvas": false,
               "displayName": "Document Viewer",
               "iconSVG": "/static/media/icon.09fcd36b.svg",
-              "widgetId": "437r2ypajz",
               "topRow": 54,
               "bottomRow": 94,
               "parentRowSpace": 10,
-              "isVisible": true,
               "type": "DOCUMENT_VIEWER_WIDGET",
-              "version": 1,
               "hideCard": false,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
               "animateLoading": true,
               "parentColumnSpace": 12.5625,
               "leftColumn": 1,
-              "docUrl": "https://www.learningcontainer.com/wp-content/uploads/2019/09/sample-pdf-file.pdf",
-              "key": "sg04tv8tji"
+              "key": "sg04tv8tji",
+              "labelTextSize": "0.875rem",
+              "rightColumn": 25,
+              "widgetId": "437r2ypajz",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "0px",
+              "docUrl": "https://www.learningcontainer.com/wp-content/uploads/2019/09/sample-pdf-file.pdf"
             },
             {
+              "boxShadow": "none",
               "widgetName": "DatePicker1",
               "minDate": "1920-12-31T18:30:00.000Z",
               "dateFormat": "YYYY-MM-DD HH:mm",
@@ -256,12 +301,19 @@
               "animateLoading": true,
               "parentColumnSpace": 12.5625,
               "leftColumn": 39,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                }
+              ],
               "isDisabled": false,
               "key": "f46e7o7cj2",
+              "labelTextSize": "0.875rem",
               "isRequired": false,
               "defaultDate": "2022-04-08T05:52:36.596Z",
               "rightColumn": 59,
               "widgetId": "017hosex70",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
               "datePickerType": "DATE_PICKER",
               "label": "",
@@ -270,32 +322,36 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "timePrecision": "minute",
+              "borderRadius": "0px",
               "firstDayOfWeek": 0,
               "closeOnSelection": true,
               "maxDate": "2121-12-31T18:29:00.000Z"
             },
             {
+              "boxShadow": "none",
               "widgetName": "Audio1",
-              "rightColumn": 36,
               "displayName": "Audio",
               "iconSVG": "/static/media/icon.cb54df7a.svg",
-              "widgetId": "bspkj3207g",
               "topRow": 162,
               "bottomRow": 166,
               "parentRowSpace": 10,
-              "isVisible": true,
               "type": "AUDIO_WIDGET",
-              "version": 1,
-              "url": "https://assets.appsmith.com/widgets/birds_chirping.mp3",
               "hideCard": false,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
               "animateLoading": true,
               "parentColumnSpace": 12.5625,
               "leftColumn": 8,
-              "autoPlay": false,
-              "key": "yks5sh1lpj"
+              "key": "yks5sh1lpj",
+              "labelTextSize": "0.875rem",
+              "rightColumn": 36,
+              "widgetId": "bspkj3207g",
+              "isVisible": true,
+              "version": 1,
+              "url": "https://assets.appsmith.com/widgets/birds_chirping.mp3",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "0px",
+              "autoPlay": false
             }
           ]
         },
